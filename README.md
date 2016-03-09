@@ -36,7 +36,7 @@ Recién instalado no notarás mucha diferencia tal vez, eso es porque necesitas 
 
 ## Copyright & License
 
-© [QwertyForte](https://qwertyforte.com) Licencia MIT 
-Por [@JorgeArtware](https://twitter.com/jorgeartware) para QwertyForte
-Originalmente desarrollado para la casa productora [La Flor del Nopal](http://laflordelnopal.com)
-Inicialmente basado en "Landscape" de [Diverse Themes](http://diversethemes.com) pero con demasiadas modificaciones.
+© [QwertyForte](https://qwertyforte.com) Licencia MIT  
+Por [@JorgeArtware](https://twitter.com/jorgeartware) para QwertyForte  
+Originalmente desarrollado para la casa productora [La Flor del Nopal](http://laflordelnopal.com)  
+Inicialmente basado en "Landscape" de [Diverse Themes](http://diversethemes.com) pero con demasiadas modificaciones.  
