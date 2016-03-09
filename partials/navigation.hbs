@@ -1,0 +1,13 @@
+<div id="menu">
+<nav role="navigation" class="site-navigation main-navigation">
+	<h1 class="assistive-text">Menu</h1>
+
+	<div class="menu-main-container">
+		<ul id="menu-main" class="menu">
+			{{#foreach navigation}}
+				<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+			{{/foreach}}
+		</ul>
+	</div>
+</nav><!-- .site-navigation .main-navigation -->
+</div><!-- #menu -->
