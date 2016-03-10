@@ -1128,21 +1128,35 @@ margin on the iframe, cause it breaks stuff. */
     margin-right:auto;
 }
 
+#producciones h2 {
+    text-align: center;
+}
+
+#producciones img {
+    width: 100%;
+}
+
 #equipo {
-    width: 80%;
+    width: 90%;
+    text-align: center;
     margin: 0 auto;
 }
 
 #equipo article {
-    vertical-align: top;
+    float: left;
+    width: 10em;
+    height: 10em;
     display: inline-block;
-    width: 40%;
+    width: 30%;
+    vertical-align: top;
     margin: 0 auto;
 }
 
 #equipo header {
-    width: 400px;
-    height: 400px;
+    /*width: 10em;*/
+    /*height: 10em;*/
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     margin: 0 auto;
 }
