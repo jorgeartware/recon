@@ -45,6 +45,8 @@ html {
    font-family: sans-serif;
    -ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
+    background-color: #100806;
+    color: #fff;
 }
 body { margin: 0; }
 a { background: transparent; }
@@ -64,7 +66,7 @@ hr {
    box-sizing: content-box;
    height: 0;
 }
-mark { background: #ff0; color: #100806; }
+mark { background: #100806; color: #fff; }
 code, kbd, pre,
 samp { font-family: monospace, serif; font-size: 1em; }
 pre { white-space: pre-wrap; }
@@ -183,17 +185,18 @@ body {
 	font-family: 'Source Code Pro', 'Consolas', "Courier New", 'Courier', monospace;
 	font-size: 22px;
 	line-height: 1.5;
-	color: #3A4145;
+	color: #fff;
+    background-color: #100806;
 }
 
 ::-moz-selection {
-	color: #222;
+	color: #aaa;
 	background: #D6EDFF;
 	text-shadow: none;
 }
 
 ::selection {
-	color: #222;
+	color: #aaa;
 	background: #D6EDFF;
 	text-shadow: none;
 }
@@ -225,7 +228,7 @@ h6{
 	font-weight:bold;
 }
 hr {
-	background-color: #ccc;
+	background-color: #fff;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -235,7 +238,7 @@ hr {
 a,
 a:visited,
 a:active {
-	color: #100806;
+	color: #fff;
 	text-decoration: none;
 	transition: all .4s ease-in-out;
 	-webkit-transition: all .4s ease-in-out;
@@ -315,7 +318,7 @@ blockquote cite {
 blockquote cite a { font-weight: normal; }
 
 mark {
-	background-color: #ffc336;
+	background-color: #100806;
 }
 
 code, tt {
@@ -386,7 +389,7 @@ table td {
 	border-top: 1px solid #efefef;
 }
 
-table th { color: #100806; }
+table th { color: #fff; }
 
 table caption + thead tr:first-child th,
 table caption + thead tr:first-child td,
@@ -403,7 +406,7 @@ table table table { background-color: #fff; }
 
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
-	background-color: #f6f6f6;
+	background-color: #100806;
 }
 
 table.plain tbody > tr:nth-child(odd) > td,
@@ -691,7 +694,7 @@ margin on the iframe, cause it breaks stuff. */
 	margin:0;
 	text-decoration:none;
 	font-size:38px;
-	color:#100806;
+	color:#fff;
 	text-transform:capitalize;
 	text-align:center;
 	font-weight: normal;
@@ -699,6 +702,10 @@ margin on the iframe, cause it breaks stuff. */
 
 .post-title a {
 	text-decoration: none;
+}
+
+.post-image {
+    width: 100%;
 }
 
 .post-excerpt p {
@@ -932,7 +939,7 @@ margin on the iframe, cause it breaks stuff. */
 	bottom: -5px;
 	left: 50%;
 	margin-left: -5px;
-	background: #fff;
+	background: #100806;
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
 	border-radius: 100%;
@@ -1022,7 +1029,7 @@ margin on the iframe, cause it breaks stuff. */
 	line-height: 1.7em;
 	color: #333;
 	text-align: center;
-	background: #fff;
+	background: #100806;
 }
 
 .site-footer a {
@@ -1055,7 +1062,7 @@ margin on the iframe, cause it breaks stuff. */
 	text-align: center;
 	line-height: 2.4rem;
 	border-radius: 50px;
-	background: #fff;
+	background: #100806;
 	transition: box-shadow 0.5s;
 }
 
@@ -1138,23 +1145,21 @@ margin on the iframe, cause it breaks stuff. */
 
 #equipo {
     width: 90%;
-    text-align: center;
+    text-align: justify;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 #equipo article {
     float: left;
-    width: 10em;
-    height: 10em;
     display: inline-block;
-    width: 30%;
     vertical-align: top;
     margin: 0 auto;
+    width: 15em;
 }
 
 #equipo header {
-    /*width: 10em;*/
-    /*height: 10em;*/
     width: 300px;
     height: 300px;
     overflow: hidden;
@@ -1176,6 +1181,89 @@ margin on the iframe, cause it breaks stuff. */
 
 #equipo ul {
     list-style-type: none;
+}
+
+#contacto {
+    text-align: center;
+}
+
+#contacto textarea {
+    width: 400px;
+    height: 200px;
+}
+
+#contacto input[type="email"] {
+    width: 300px;
+}
+#contacto input[type="submit"] {
+    width: 100px;
+    margin-left: -11px;
+}
+
+#alianzas {
+    width: 100%;
+    height:100%;
+    text-align: justify;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#alianzas article {
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+    width: 15em;
+}
+
+#alianzas header {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#alianzas img {
+    height: 100%;
+}
+
+.alianzas-detalles {
+    text-align: center;
+    z-index: -1;
+}
+
+.alianzas-detalles h2 {
+    font-size: 1em;
+}
+
+#alianzas article.post{
+    border:none;
+}
+
+#alianzas ul {
+    list-style-type: none;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    padding: 5px;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 14px;
+    padding: 5px;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    font-size: 14px;
+    padding: 5px;
+}
+:-ms-input-placeholder {
+    font-size: 14px;
+    padding: 5px;
+}
+
+footer .inner, footer .inner.copyright {
+    width: 95%;
 }
 
 /* ==========================================================================
