@@ -556,6 +556,7 @@ margin on the iframe, cause it breaks stuff. */
 	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 	clear: both;
 	font-size: 14px;
+    position: fixed;
 }
 
 .main-navigation a{
