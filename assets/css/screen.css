@@ -686,7 +686,6 @@ margin on the iframe, cause it breaks stuff. */
 	max-width: 1000px;
 	margin: 4rem auto;
 	padding-bottom: 4rem;
-	border-bottom: 1px solid #e6e6e6;
 	word-break: break-word;
 	hyphens: auto;
 }
@@ -1128,8 +1127,12 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 /* ==========================================================================
-   OTROS.
+   Index.
    ========================================================================== */
+
+#menu {
+    overflow: hidden;
+}
 
 .portada iframe {
     margin-left:auto;
@@ -1236,10 +1239,6 @@ margin on the iframe, cause it breaks stuff. */
 
 .alianzas-detalles h2 {
     font-size: 1em;
-}
-
-#alianzas article.post{
-    border:none;
 }
 
 #alianzas ul {
