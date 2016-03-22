@@ -47,7 +47,7 @@
 
           if (timeout)
               clearTimeout(timeout);
-          else if (execAsap)
+          else if (execAsap)hidden
               func.apply(obj, args);
 
           timeout = setTimeout(delayed, threshold || 100);
@@ -66,7 +66,7 @@
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                 if (target.length) {
                     $('html, body').animate({
-                        scrollTop: target.offset().top
+                        scrollTop: target.offset().top - $('.main-navigation').height()
                     }, 1000);
                     return false;
                 }
