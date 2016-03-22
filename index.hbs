@@ -33,7 +33,7 @@
             {{#foreach posts}}
                 <article class="{{post_class}}">
                     <section class="post-excerpt">
-                        <p>{{content}}&hellip;</p>
+                        <p>{{content}}</p>
                     </section>
                 </article>
             {{/foreach}}
@@ -82,14 +82,15 @@
 
     {{! Forma de contacto }}
     <div id="contacto">
-        <h3>Contactanos</h3>
-        <section>
-            <form action="">
-                <textarea name="" id="" placeholder="Escribenos tu aquí tu mensaje"></textarea></br>
-                <input type="email" placeholder="tu@email.com">
-                <input type="submit">
-            </form>
-        </section>
+        {{#get "posts" filter="tag:contacto"}}
+            {{#foreach posts}}
+                <article class="{{post_class}}">
+                    <section class="post-excerpt">
+                        <p>{{content}}</p>
+                    </section>
+                </article>
+            {{/foreach}}
+        {{/get}}
     </div>
 
     <div id="alianzas">
@@ -103,10 +104,6 @@
                             <img src="{{image}}" alt="Foto de {{title}}">
                         </a>
                     </header>
-                    <section class="alianzas-detalles">
-                        <h2 class="post-title">{{{title}}}</h2>
-                        <p class="equipo-links">{{content}}</p>
-                    </section>
                 </article>
             {{/foreach}}
         {{/get}}
