@@ -61,6 +61,7 @@
     </div>
 
     <div id="equipo">
+        <h2>Equipo</h2>
         {{! Each post will be output using this markup }}
             {{#get "posts" filter="tag:equipo"}}
                 {{#foreach posts}}
@@ -70,7 +71,7 @@
                         </section>
                         <section class="equipo-detalles">
                             <h2 class="post-title">{{{title}}}</h2>
-                            <p class="equipo-links">{{content}}</p>
+                            {{content}}
                         </section>
                     </article>
                 {{/foreach}}

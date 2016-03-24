@@ -1148,10 +1148,11 @@ margin on the iframe, cause it breaks stuff. */
 
 #equipo {
     width: 80%;
-    text-align: justify;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+}
+
+#equipo h2 {
+    text-align: center;
 }
 
 #equipo article {
@@ -1171,11 +1172,10 @@ margin on the iframe, cause it breaks stuff. */
     /*word-break: break-word;*/
 }
 
-
 #equipo .equipo-foto-marco {
     width: 20vw;
     height: 20vw;
-    max-width: 200px;
+    /*max-width: 200px;*/
     overflow: hidden;
     margin: 0 auto;
 }
@@ -1190,8 +1190,24 @@ margin on the iframe, cause it breaks stuff. */
     z-index: -1;
 }
 
-#equipo ul {
+.equipo-detalles h2 {
+    font-size: 2vw;
+}
+
+.equipo-detalles h3 {
+    font-size: 1.5vw;
+    margin: 0px;
+}
+
+.equipo-detalles ul {
+    font-size: 2vw;
     list-style-type: none;
+    margin: 0px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
 }
 
 #contacto {
