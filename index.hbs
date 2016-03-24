@@ -66,12 +66,12 @@
             {{#get "posts" filter="tag:equipo"}}
                 {{#foreach posts}}
                     <article class="equipo-miembro">
-                        <section class="equipo-foto-marco">
-                            <img src="{{image}}" alt="Foto de {{title}}">
-                        </section>
+                        <h3 class="equipo-nombre">{{{title}}}</h3>
                         <section class="equipo-detalles">
-                            <h2 class="post-title">{{{title}}}</h2>
-                            {{content}}
+                            <div class="equipo-foto-marco">
+                                <img src="{{image}}" alt="Foto de {{title}}">
+                                {{content}}
+                            </div>
                         </section>
                     </article>
                 {{/foreach}}
