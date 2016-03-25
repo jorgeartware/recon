@@ -1162,7 +1162,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 #equipo h4 {
-    font-size: 1.7vw;
+    font-size: 1.3vw;
 }
 
 #equipo article {
@@ -1173,11 +1173,11 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 #equipo .equipo-miembro {
-    /*width: 80%;*/
-    /*max-width: 1000px;*/
-    /*margin: 1rem auto;*/
-    /*padding: 3rem 0;*/
-    /*word-break: break-word;*/
+}
+
+.equipo-detalles {
+    text-align: center;
+    z-index: -1;
 }
 
 #equipo .equipo-foto-marco {
@@ -1191,28 +1191,28 @@ margin on the iframe, cause it breaks stuff. */
 
 #equipo img {
     height: 20vw;
-    translateY(-50%);
 }
 
-.equipo-detalles {
-    text-align: center;
-    z-index: -1;
-}
-
-.equipo-detalles .links-sociales {
+#equipo .links-sociales {
     position: absolute;
-    width: 20vw;
-    height: 20vw;
+    width: 21vw;
+    height: 20.5vw;
     z-index: 9999;
-    display: inline-block;
     margin: 0 auto;
+    margin-left: 0.4vw;
+    margin-top: -0.25vw;
+    background-color: rgba(0, 0, 0, 0.8);
 
     opacity: 0;
-    -webkit-transform: translateY(20%);
-    -moz-transform: translateY(20%);
-    -ms-transform: translateY(20%);
-    -o-transform: translateY(20%);
-    transform: translateY(20%);
+    -webkit-transform:  translateY(-20vw) translateX(1vw);
+    -moz-transform:  translateY(-20vw) translateX(1vw);
+    -ms-transform:  translateY(-20vw) translateX(1vw);
+    -o-transform: translateY(-20vw) translateX(1vw);
+    transform: translateY(-20vw) translateX(1vw);
+}
+
+#equipo .links-sociales:hover {
+    opacity: 1;
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -ms-transition: all .4s ease;
@@ -1220,53 +1220,32 @@ margin on the iframe, cause it breaks stuff. */
     transition: all .4s ease;
 }
 
-.equipo-detalles .links-sociales:hover {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-}
-
-.equipo-detalles ul {
+#equipo .links-sociales a {
+    display: inline-block;
     font-size: 1.5vw;
     list-style-type: none;
-    margin: 0 auto;
-    vertical-align: bottom;
-
-
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
-
-    width: 100%;
     text-align: center;
     bottom: 0;
-    padding: 5px 0;
-    background-color: rgba(0, 0, 0, 0.8);
-
+    margin: 10vw 0 0 0;
 }
 
-.equipo-detalles ul li {
-    display: inline-block;
+#equipo .links-sociales a:before {
+    content: attr(target, _blank);
 }
 
-.equipo-detalles .link-personalweb:before {
+.equipo-detalles .link-personalweb:after {
     content: "www";
 }
-.equipo-detalles .link-facebook:before {
+.equipo-detalles .link-facebook:after {
     content: "fb";
 }
-.equipo-detalles .link-linkedin:before {
+.equipo-detalles .link-linkedin:after {
     content: "li";
 }
-.equipo-detalles .link-twitter:before {
+.equipo-detalles .link-twitter:after {
     content: "tw";
 }
-.equipo-detalles .link-github:before {
+.equipo-detalles .link-github:after {
     content: "gh";
 }
 
