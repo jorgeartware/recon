@@ -121,51 +121,195 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Import the font file with the icons in it */
 @font-face {
-	font-family: 'icons';
-	src:url('../fonts/icons.eot');
-	src:url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icons.woff') format('woff'),
-		url('../fonts/icons.ttf') format('truetype'),
-		url('../fonts/icons.svg#icons') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'ricon';
+    src:    url('../fonts/ricon.eot?7rdx1p');
+    src:    url('../fonts/ricon.eot?7rdx1p#iefix') format('embedded-opentype'),
+    url('../fonts/ricon.ttf?7rdx1p') format('truetype'),
+    url('../fonts/ricon.woff?7rdx1p') format('woff'),
+    url('../fonts/ricon.svg?7rdx1p#ricon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* Apply these base styles to all icons */
-.icon-ghost:before,
-.icon-feed:before,
-.icon-twitter:before,
-.icon-google-plus:before,
-.icon-facebook:before {
-	font-family: 'icons';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	text-decoration: none;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'ricon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* Each icon is created by inserting the corret character into the
-   content of the :before pseudo element. Like a boss. */
+.icon-reel:before {
+    content: "\f008";
+}
+.icon-call:before {
+    content: "\f098";
+}
+.icon-calenday:before {
+    content: "\f133";
+}
+.icon-youtube2:before {
+    content: "\f167";
+}
+.icon-settings:before {
+    content: "\f1de";
+}
+.icon-share:before {
+    content: "\f1e0";
+}
+.icon-meetup:before {
+    content: "\f300";
+}
 .icon-ghost:before {
-	content: "\e000";
+    content: "\e000";
 }
-.icon-feed:before {
-	content: "\e001";
+.icon-bitbucket:before {
+    content: "\e900";
 }
-.icon-twitter:before {
-	content: "\e002";
-	font-size: 1.1em;
+.icon-newspaper:before {
+    content: "\e927";
+}
+.icon-quill:before {
+    content: "\e901";
+}
+.icon-images:before {
+    content: "\e902";
+}
+.icon-camera:before {
+    content: "\e903";
+}
+.icon-film:before {
+    content: "\e904";
+}
+.icon-video-camera:before {
+    content: "\e905";
+}
+.icon-phone:before {
+    content: "\e906";
+}
+.icon-envelop:before {
+    content: "\e907";
+}
+.icon-location:before {
+    content: "\e908";
+}
+.icon-compass2:before {
+    content: "\e928";
+}
+.icon-clock:before {
+    content: "\e909";
+}
+.icon-alarm:before {
+    content: "\e90a";
+}
+.icon-calendar:before {
+    content: "\e90b";
+}
+.icon-keyboard:before {
+    content: "\e90c";
+}
+.icon-mobile:before {
+    content: "\e90d";
+}
+.icon-mobile2:before {
+    content: "\e90e";
+}
+.icon-tv:before {
+    content: "\e90f";
+}
+.icon-dialog:before {
+    content: "\e910";
+}
+.icon-briefcase:before {
+    content: "\e911";
+}
+.icon-website:before {
+    content: "\e912";
+}
+.icon-terminal:before {
+    content: "\e913";
 }
 .icon-google-plus:before {
-	content: "\e003";
+    content: "\e914";
 }
 .icon-facebook:before {
-	content: "\e004";
+    content: "\e915";
+}
+.icon-instagram:before {
+    content: "\e916";
+}
+.icon-whatsapp:before {
+    content: "\e917";
+}
+.icon-spotify:before {
+    content: "\e918";
+}
+.icon-telegram:before {
+    content: "\e919";
+}
+.icon-twitter:before {
+    content: "\e91a";
+}
+.icon-vine:before {
+    content: "\e929";
+}
+.icon-feed:before {
+    content: "\e91b";
+}
+.icon-youtube:before {
+    content: "\e91c";
+}
+.icon-vimeo:before {
+    content: "\e91d";
+}
+.icon-dribbble:before {
+    content: "\e91e";
+}
+.icon-behance:before {
+    content: "\e91f";
+}
+.icon-steam:before {
+    content: "\e920";
+}
+.icon-github:before {
+    content: "\e921";
+}
+.icon-npm:before {
+    content: "\e922";
+}
+.icon-trello:before {
+    content: "\e923";
+}
+.icon-soundcloud:before {
+    content: "\e924";
+}
+.icon-skype:before {
+    content: "\e92a";
+}
+.icon-reddit:before {
+    content: "\e92b";
+}
+.icon-linkedin:before {
+    content: "\e925";
+}
+.icon-pinterest:before {
+    content: "\e926";
 }
 
 
@@ -1070,7 +1214,7 @@ margin on the iframe, cause it breaks stuff. */
 	color: #D2DEE3;
 	font-size: 10px;
 	position: absolute;
-	top: 9px;
+	top: 3px;
 	left: 9px;
 	font-weight: bold;
 	transition: color 0.5s ease;
@@ -1162,7 +1306,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 #equipo h4 {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
 }
 
 #equipo article {
@@ -1222,27 +1366,11 @@ margin on the iframe, cause it breaks stuff. */
 
 #equipo .links-sociales a {
     display: inline-block;
-    font-size: 1.5vw;
+    font-size: 2vw;
     list-style-type: none;
     text-align: center;
     bottom: 0;
     margin: 10vw 0 0 0;
-}
-
-.equipo-detalles .link-personalweb:after {
-    content: "www";
-}
-.equipo-detalles .link-facebook:after {
-    content: "fb";
-}
-.equipo-detalles .link-linkedin:after {
-    content: "li";
-}
-.equipo-detalles .link-twitter:after {
-    content: "tw";
-}
-.equipo-detalles .link-github:after {
-    content: "gh";
 }
 
 #contacto {
